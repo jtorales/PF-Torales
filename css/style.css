@@ -6,71 +6,24 @@
   }
   
 html {
-    background-color:darksalmon;
     font-size: 62.5%;
 }
 
+body {
+  background-color: darksalmon;
+}
 /* estilo del nav */
 
-.nav {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    background-color: antiquewhite;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    width: 60%;
-  }
 
-  .nav-link,
-  .logo {
-    text-decoration: none;
-    color: #000;
-    font-size: 24px;
-    padding: 15px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 3rem;
-  }
-  
-  .nav-link:hover {
-    background-color: #000;
-    border-bottom: 2px solid transparent;
-    color: tomato;
-  }
-  
-  .nav-list:hover .nav-link:not(:hover) {
-    opacity: 0.5;
-    border-bottom: 2px solid transparent;
-  }
-
-.menu {
-    flex-direction: column;
-    gap: 5px;
-    display: none;
+.nav-item a{
+  font-size: 2rem;
 }
-.menu span {
-    display: block;
-    width: 40px;
-    height: 3px;
-    background-color: rgb(0, 0, 0);
-  }
-  
-/* logo */
 
-.logo {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-  }
+.nav-item :hover {
+  background-color: #eeb12c;
+  border-bottom: 2px solid transparent;
+  color: tomato;
 
-.logo img {
-    width: 60px;
-    height: 60px;
 }
   
 /* banner */
@@ -190,19 +143,20 @@ html {
   }
   
 .Videos {
-  padding: 15px;
+  padding: 40px;
+  gap: 40px;
 }
 
 .Videos iframe {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 /* Propiedades del footer */
 
 .Footer{
     display: flex;
     height: 100%;
-    background-color: antiquewhite;
+    background-color: #fce9c5;
   }
   .Footer p{
     color: #000000;
@@ -255,25 +209,70 @@ html {
   .wide {
     grid-column: span 2;
   }
-    
+  
+
+  /* Carrito de compra*/
+
+.Compra {
+  padding: 20px;
+}
+.Compra h1{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+
+}
+
+.list-group {
+  gap: 10px;
+  padding: 15px;
+}
+/* Boton de compra */
+
+.Boton {
+  border: 1px solid #ffffff;
+  position: relative;
+  background-color: #3bad82;
+  align-items: center;
+  padding: 30px;
+  width: 170px;
+  left: 40%;
+  gap: 50px;
+}
+.Boton a {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+}
+
+/* info del local */
+
+.Descripcion {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  padding: 20px ;
+  box-sizing: 20px ;
+  display: flex
+}
+  
+.Foto {
+  gap: 15px;
+  box-sizing: 20px ;
+  padding: 20px;
+}
+
+.Mapa {
+  gap: 15px;
+  box-sizing: 20px ;
+  padding: 20px;
+}
 /* media query*/
   
   @media (max-width: 480px) {
-    header {
-      height: 120px;
-    }
-  
-    .nav {
-      height: 100%;
-    }
-  
-    .nav-list {
-      display: none;
-    }
-  
-    .menu {
-      display: flex;
-    }
     .hero {
         width: 400px;
       }
@@ -288,6 +287,28 @@ html {
       .hero-content p {
         font-size: 1rem;
       }
-    
+      .Videos iframe {
+        width: 400px;
+        height: 400px;
+      }
+      
+      .Foto {
+        gap: 15px;
+        box-sizing: 20px ;
+        padding: 20px;
+        display: flex;
+        height: 280px;
+        width: 300px;
+      }
+      
+      .Mapa iframe {
+        gap: 15px;
+        box-sizing: 20px ;
+        padding: 20px;
+        display: flex;
+        height: 200px;
+        width: 300px;
+      }
+            
 }
 
