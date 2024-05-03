@@ -2,6 +2,12 @@
 @import "base/vars";
 @import "base/reset";
 @import "base/utilities";
+
 //components
+@import "components/boton";
+@import "components/footer";
+@import "components/navbar";
+
 //layouts
 @import "layouts/index";
+@import "layouts/mediaqueris";
